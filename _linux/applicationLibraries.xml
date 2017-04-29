@@ -598,6 +598,26 @@
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nio4r-2.0.0/tasks" />
       </SOURCES>
     </library>
+    <library name="nokogiri (v1.7.1, RVM: ruby-2.3.3) [gem]">
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/nokogiri/1.7.1" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/bin" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/ext" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/lib" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/tasks" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/patches" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/suppressions" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/nokogiri/1.7.1" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/bin" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/ext" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/lib" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/tasks" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/patches" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.7.1/suppressions" />
+      </SOURCES>
+    </library>
     <library name="orm_adapter (v0.5.0, RVM: ruby-2.3.3) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/orm_adapter-0.5.0/lib" />
