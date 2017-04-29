@@ -1,0 +1,19 @@
+
+<div class="container">
+  <%= link_to 'New article', new_item_path, class:"glyphicon glyphicon-plus" %>
+  <div class="">
+    <% @items.each do |item| %>
+        <div class="bloginner">
+          <%= link_to item.title , item, class:"text-center blog-name " %>
+          <span class="pull-right">
+            <%= link_to '', edit_item_path(item), class:"glyphicon glyphicon-pencil"%>
+            <%= link_to '', item, method: :delete, class:"glyphicon glyphicon-remove" %>
+          </span>
+        </div>
+
+
+    <% end %>
+    <%= paginate @items, :theme => 'twitter-bootstrap-3' %>
+  </div>
+</div>
+
