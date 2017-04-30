@@ -642,6 +642,16 @@
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.4.0/gems/ffi-1.9.18/libtest" />
       </SOURCES>
     </library>
+    <library name="font-awesome-rails (v4.7.0.1, RVM: ruby-2.3.3 [Blog]) [gem]">
+      <CLASSES>
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/font-awesome-rails-4.7.0.1/app" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/font-awesome-rails-4.7.0.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/font-awesome-rails-4.7.0.1/app" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/font-awesome-rails-4.7.0.1/lib" />
+      </SOURCES>
+    </library>
     <library name="gem-wrappers (v1.2.7, RVM: ruby-2.3.3 [global]) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@global/gems/gem-wrappers-1.2.7/ext" />
