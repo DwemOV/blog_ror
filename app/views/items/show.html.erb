@@ -2,8 +2,28 @@
 <div class="container">
   <h1 class="text-center"><%= @item.title%></h1>
   <div class="bloginner">
-    <%= @item.description%>
+    <%= raw @item.description%>
+  </div>
+  <div>
+    <span>create:</span>
+    <%= @item.created_at%>
+     <span>update:</span>
+    <%= @item.updated_at%>
   </div>
 </div>
 
+<div class="container">
+  <div class="col-md-12 ">
 
+          <div class="bloginner">
+            <%=  render(@item.coments)  %>
+          </div>
+    <%= form_for @item, url: new_item_coment_path do |item|%>
+        <%= item.fields_for :coment do |coment_form|%>
+            <div><%= coment_form.text_area  :description, class:'form-control'%></div>
+             <%= coment_form.submit 'create'%>
+        <% end %>
+    <% end %>
+
+  </div>
+</div>

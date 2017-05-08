@@ -61,3 +61,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "font-awesome-rails"
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'paperclip'
+gem 'carrierwave'
+gem 'mini_magick'
