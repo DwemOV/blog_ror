@@ -18,11 +18,11 @@
           <div class="bloginner">
             <%=  render(@item.coments)  %>
           </div>
-    <%= form_for @item, url: new_item_coment_path do |item|%>
-        <%= item.fields_for :coment do |coment_form|%>
-            <div><%= coment_form.text_area  :description, class:'form-control'%></div>
-             <%= coment_form.submit 'create'%>
-        <% end %>
+    <%= form_for [@item, @coment],  url: new_item_coment(@item), remote: true do |f| %>
+        <br>
+        <%= f.text_area :text, placeholder: 'Message' %>
+        <br>
+        <%= f.submit 'create'%>
     <% end %>
 
   </div>

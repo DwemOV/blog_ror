@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   resources :items do
-    resources :coments, shallow: true
+    resources :coments
   end
   resources :items
 
