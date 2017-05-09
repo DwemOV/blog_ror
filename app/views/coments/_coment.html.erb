@@ -11,5 +11,7 @@
       <%= coment.created_at%>
       <span>update:</span>
       <%= coment.updated_at%>
+      <%= link_to 'like', item_coment_likes_path(coment.item,coment) , remote: true %>
+      <%= link_to 'unlike', item_coment_unlikes_path(coment.item,coment) , remote: true %>
     </div>
 </div>

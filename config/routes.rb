@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   resources :items do
-    resources :coments
+    resources :coments do
+      get 'likes', as: 'likes'
+      get 'unlikes', as: 'unlikes'
+    end
   end
   resources :items
 

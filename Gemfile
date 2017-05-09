@@ -17,6 +17,7 @@ gem 'sass-rails', github: "rails/sass-rails"
 
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+gem 'activeadmin'
 gem 'devise', '>= 4.1.0'
 
 
