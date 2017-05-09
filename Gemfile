@@ -17,8 +17,8 @@ gem 'sass-rails', github: "rails/sass-rails"
 
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+gem 'devise', '>= 4.1.0'
 
-gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use Uglifier as compressor for JavaScript assets
@@ -69,3 +69,5 @@ gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'paperclip'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'socialization'
+
