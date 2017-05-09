@@ -15,14 +15,13 @@
 <div class="container">
   <div class="col-md-12 ">
 
-          <div class="bloginner">
-            <%=  render(@item.coments)  %>
-          </div>
-    <%= form_for @item, url: new_item_coment_path do |item|%>
-        <%= item.fields_for :coment do |coment_form|%>
-            <div><%= coment_form.text_area  :description, class:'form-control'%></div>
-             <%= coment_form.submit 'create'%>
-        <% end %>
+    <%=  render(@item.coments)  %>
+
+    <%= form_for [@item, @item.coments.build], remote: true do |f| %>
+        <br>
+        <%= f.cktext_area :description, placeholder: 'Message' %>
+        <br>
+        <%= f.submit 'create',remote:true%>
     <% end %>
 
   </div>
