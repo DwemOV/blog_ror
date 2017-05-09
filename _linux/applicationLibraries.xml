@@ -2080,6 +2080,16 @@
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/selenium-webdriver-3.4.0/lib" />
       </SOURCES>
     </library>
+    <library name="socialization (v1.2.0, RVM: ruby-2.3.3 [Blog]) [gem]">
+      <CLASSES>
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/socialization-1.2.0/lib" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/socialization-1.2.0/demo" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/socialization-1.2.0/lib" />
+        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/socialization-1.2.0/demo" />
+      </SOURCES>
+    </library>
     <library name="spring (v2.0.1, RVM: ruby-2.3.3 [Blog]) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/spring-2.0.1/bin" />
