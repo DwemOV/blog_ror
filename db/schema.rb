@@ -37,10 +37,12 @@ ActiveRecord::Schema.define(version: 20170507233923) do
 
   create_table "coments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "item_id"
+    t.bigint "user_id"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_coments_on_item_id"
+    t.index ["user_id"], name: "index_coments_on_user_id"
   end
 
   create_table "items", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -74,4 +76,5 @@ ActiveRecord::Schema.define(version: 20170507233923) do
 
   add_foreign_key "auth_providers", "users"
   add_foreign_key "coments", "items"
+  add_foreign_key "coments", "users"
 end
