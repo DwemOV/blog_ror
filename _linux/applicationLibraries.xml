@@ -396,16 +396,6 @@
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/autoprefixer-rails-6.7.7.2/vendor" />
       </SOURCES>
     </library>
-    <library name="autoprefixer-rails (v6.7.7.2, RVM: ruby-2.3.3) [gem]">
-      <CLASSES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/autoprefixer-rails-6.7.7.2/lib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/autoprefixer-rails-6.7.7.2/vendor" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/autoprefixer-rails-6.7.7.2/lib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/autoprefixer-rails-6.7.7.2/vendor" />
-      </SOURCES>
-    </library>
     <library name="autoprefixer-rails (v6.7.7.2, RVM: ruby-2.4.0) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.4.0/gems/autoprefixer-rails-6.7.7.2/lib" />
@@ -780,14 +770,6 @@
       </CLASSES>
       <SOURCES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/childprocess-0.6.3/lib" />
-      </SOURCES>
-    </library>
-    <library name="childprocess (v0.6.3, RVM: ruby-2.3.3) [gem]">
-      <CLASSES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/childprocess-0.6.3/lib" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/childprocess-0.6.3/lib" />
       </SOURCES>
     </library>
     <library name="childprocess (v0.6.3, RVM: ruby-2.4.0) [gem]">
@@ -2520,20 +2502,6 @@
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/rack-2.0.1/example" />
       </SOURCES>
     </library>
-    <library name="rack (v2.0.1, RVM: ruby-2.3.3) [gem]">
-      <CLASSES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/bin" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/lib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/contrib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/example" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/bin" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/lib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/contrib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/rack-2.0.1/example" />
-      </SOURCES>
-    </library>
     <library name="rack (v2.0.1, RVM: ruby-2.4.0) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.4.0/gems/rack-2.0.1/bin" />
@@ -3060,16 +3028,6 @@
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/bundler/gems/sass-rails-eafddf6eeecc/gemfiles" />
       </SOURCES>
     </library>
-    <library name="sass-rails (v6.0.0.beta1@eafddf, RVM: ruby-2.3.3) [gem]">
-      <CLASSES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/bundler/gems/sass-rails-eafddf6eeecc/lib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/bundler/gems/sass-rails-eafddf6eeecc/gemfiles" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/bundler/gems/sass-rails-eafddf6eeecc/lib" />
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/bundler/gems/sass-rails-eafddf6eeecc/gemfiles" />
-      </SOURCES>
-    </library>
     <library name="sass-rails (v6.0.0.beta1@eafddf, RVM: ruby-2.4.0) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.4.0/bundler/gems/sass-rails-eafddf6eeecc/lib" />
@@ -3322,14 +3280,6 @@
       </CLASSES>
       <SOURCES>
         <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3@Blog/gems/turbolinks-source-5.0.0/lib" />
-      </SOURCES>
-    </library>
-    <library name="turbolinks-source (v5.0.0, RVM: ruby-2.3.3) [gem]">
-      <CLASSES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.0.0/lib" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://$USER_HOME$/.rvm/gems/ruby-2.3.3/gems/turbolinks-source-5.0.0/lib" />
       </SOURCES>
     </library>
     <library name="turbolinks-source (v5.0.0, RVM: ruby-2.4.0) [gem]">
