@@ -1,6 +1,23 @@
 class ItemsController < ApplicationController
     before_action :set_item, only: [:show, :edit, :update, :destroy]
 
+    def likes
+      current_user.like!(Item.find_by(id: params[:item_id]))
+      respond_to do |format|
+        format.html { redirect_to :root}
+        # format.js
+      end
+
+    end
+
+    def unlikes
+      current_user.unlike!(Item.find_by(id: params[:item_id]))
+      respond_to do |format|
+        format.js
+        format.html {redirect_to :root}
+      end
+    end
+
   # GET /items
   # GET /items.json
   def index
@@ -28,7 +45,7 @@ class ItemsController < ApplicationController
   # POST /items.json
   def create
     @item = Item.new(item_params)
-
+    @item.user_id = current_user.id
     respond_to do |format|
       if @item.save
         format.html { redirect_to @item, notice: 'Item was successfully created.' }

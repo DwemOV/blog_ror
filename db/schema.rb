@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170509163141) do
+ActiveRecord::Schema.define(version: 20170520202403) do
 
   create_table "active_admin_comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "namespace"
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(version: 20170509163141) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "likers_count", default: 0
     t.index ["item_id"], name: "index_coments_on_item_id"
     t.index ["user_id"], name: "index_coments_on_user_id"
   end
@@ -91,6 +92,9 @@ ActiveRecord::Schema.define(version: 20170509163141) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.integer "likers_count", default: 0
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "likes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -138,4 +142,5 @@ ActiveRecord::Schema.define(version: 20170509163141) do
   add_foreign_key "auth_providers", "users"
   add_foreign_key "coments", "items"
   add_foreign_key "coments", "users"
+  add_foreign_key "items", "users"
 end

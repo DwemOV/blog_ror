@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   has_many :auth_providers, dependent: :destroy
   has_many :coments , dependent: :destroy
+  has_many :items , dependent: :destroy
   accepts_nested_attributes_for :coments, allow_destroy: true
   acts_as_follower
   acts_as_liker
