@@ -5,13 +5,34 @@
   </div>
 
     <br>
-    <div class="postedit">
+    <div  class="postedit">
+
       <strong><%= coment.user.email%> -</strong>
+
       <span>create:</span>
       <%= coment.created_at%>
+
       <span>update:</span>
       <%= coment.updated_at%>
-      <%= link_to 'like', item_coment_likes_path(coment.item,coment) , remote: true %>
-      <%= link_to 'unlike', item_coment_unlikes_path(coment.item,coment) , remote: true %>
+
+      <% if user_signed_in? %>
+          <span class="like_coment">
+            <%= link_to 'like', item_coment_likes_path(coment.item,coment)  %>
+            <%= link_to 'unlike', item_coment_unlikes_path(coment.item,coment)  %>
+
+          </span>
+      <% end%>
+
+      <span id="likes">
+        <%= coment.likers_count%>
+      </span>
+
+
+      <% if user_signed_in? %>
+          <span class="pull-right">
+              <%= link_to '', edit_item_coment_path(coment.item,coment), class:"glyphicon glyphicon-pencil"%>
+              <%= link_to '', item_coment_path(coment.item,coment), method: :delete, class:"glyphicon glyphicon-remove" %>
+          </span>
+      <% end%>
     </div>
 </div>

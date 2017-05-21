@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       get 'likes', as: 'likes'
       get 'unlikes', as: 'unlikes'
     end
+    get 'likes', as: 'likes'
+    get 'unlikes', as: 'unlikes'
   end
   resources :items
 

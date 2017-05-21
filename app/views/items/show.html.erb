@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
 <div class="container">
   <h1 class="text-center"><%= @item.title%></h1>
   <div class="bloginner">
     <%= raw @item.description%>
   </div>
   <div>
-    <span>create:</span>
-    <%= @item.created_at%>
-     <span>update:</span>
-    <%= @item.updated_at%>
+    <span>author: <%= @item.user.email%> create: <%= @item.created_at%> update: <%= @item.updated_at%></span>
+
+
+
   </div>
 </div>
 
@@ -21,11 +20,12 @@
 
 
 
-    <%= form_for [@item, @item.coments.build], remote: true do |f| %>
+    <%= form_for [@item, @item.coments.build],id:'form_message', remote: true do |f| %>
         <br>
-        <%= f.cktext_area :description, placeholder: 'Message' %>
+        <%= f.cktext_area :description, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }%>
         <br>
         <%= f.submit 'create'%>
+
     <% end %>
 
   </div>

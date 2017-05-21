@@ -3,12 +3,31 @@
   <%= link_to 'New article', new_item_path, class:"glyphicon glyphicon-plus" %>
   <div class="">
     <% @items.each do |item| %>
+
+
+
+
         <div class="bloginner">
+
           <%= link_to item.title , item, class:"text-center blog-name " %>
+
+          <% if user_signed_in? %>
+              <span class="like_item">
+                <%= link_to 'like', item_likes_path(item)  %>
+                <%= link_to 'unlike', item_unlikes_path(item)  %>
+              </span>
+          <% end%>
+
+          <span id="likes">
+             <%= item.likers_count%>
+          </span>
+
           <span class="pull-right">
             <%= link_to '', edit_item_path(item), class:"glyphicon glyphicon-pencil"%>
             <%= link_to '', item, method: :delete, class:"glyphicon glyphicon-remove" %>
           </span>
+
+
         </div>
 
 
