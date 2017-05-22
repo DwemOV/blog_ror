@@ -1,31 +1,29 @@
 
 <div class="container">
-  <%= link_to 'New article', new_item_path, class:"glyphicon glyphicon-plus" %>
+
   <div class="">
     <% @items.each do |item| %>
-
-
-
 
         <div class="bloginner">
 
           <%= link_to item.title , item, class:"text-center blog-name " %>
-
+          <div class="desc">  <%= raw item.description %> </div>
           <% if user_signed_in? %>
               <span class="like_item">
-                <%= link_to 'like', item_likes_path(item)  %>
-                <%= link_to 'unlike', item_unlikes_path(item)  %>
+                <%= link_to '', item_likes_path(item) ,class:"glyphicon glyphicon-thumbs-up" %>
+                <%= link_to '', item_unlikes_path(item),class:"glyphicon glyphicon-thumbs-down"  %>
               </span>
           <% end%>
 
-          <span id="likes">
+          <span class="glyphicon glyphicon-heart">
              <%= item.likers_count%>
           </span>
-
-          <span class="pull-right">
-            <%= link_to '', edit_item_path(item), class:"glyphicon glyphicon-pencil"%>
-            <%= link_to '', item, method: :delete, class:"glyphicon glyphicon-remove" %>
-          </span>
+          <% if user_signed_in? && current_user.role_admin?%>
+              <span class="pull-right">
+                <%= link_to '', edit_item_path(item), class:"glyphicon glyphicon-pencil"%>
+                <%= link_to '', item, method: :delete, class:"glyphicon glyphicon-remove" %>
+              </span>
+          <% end%>
 
 
         </div>

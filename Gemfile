@@ -71,4 +71,7 @@ gem 'paperclip'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'socialization'
-
+gem 'pundit'
+gem 'rspec'
+gem 'rspec-rails'
+gem 'factory_girl_rails'

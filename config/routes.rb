@@ -17,4 +17,10 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   root 'items#index'
   get 'about'=>'items#about'
+  resources :users, only: [:update] do
+    collection do
+      get :profile
+    end
+  end
+
 end

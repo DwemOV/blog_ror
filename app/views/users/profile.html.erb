@@ -1,0 +1,14 @@
+<h2 class="text-center">Profile <%= @user.email %></h2>
+<div class="reg-inner">
+  <div class="center-form">
+    <%= image_tag @user.avatar.url(:small) %>
+    <%= form_for(@user, as: :user, url: profile_users_path, html: { method: :put })   do |f| %>
+
+        <%= f.file_field :avatar %>
+
+        <span class='actions'>
+          <%= f.submit 'Update' %>
+        </span>
+    <% end %>
+  </div>
+</div>
