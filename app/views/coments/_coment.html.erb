@@ -17,21 +17,27 @@
 
       <% if user_signed_in? %>
           <span class="like_coment">
-            <%= link_to 'like', item_coment_likes_path(coment.item,coment)  %>
-            <%= link_to 'unlike', item_coment_unlikes_path(coment.item,coment)  %>
+            <%= link_to '', item_coment_likes_path(coment.item,coment) ,class:"glyphicon glyphicon-thumbs-up" %>
+            <%= link_to '', item_coment_unlikes_path(coment.item,coment),class:"glyphicon glyphicon-thumbs-down"  %>
 
           </span>
       <% end%>
 
-      <span id="likes">
+      <span class="glyphicon glyphicon-heart">
         <%= coment.likers_count%>
       </span>
 
 
       <% if user_signed_in? %>
           <span class="pull-right">
+
+            <% if policy(coment).update? %>
               <%= link_to '', edit_item_coment_path(coment.item,coment), class:"glyphicon glyphicon-pencil"%>
+            <%end%>
+
+            <% if policy(coment).destroy? %>
               <%= link_to '', item_coment_path(coment.item,coment), method: :delete, class:"glyphicon glyphicon-remove" %>
+            <%end%>
           </span>
       <% end%>
     </div>
