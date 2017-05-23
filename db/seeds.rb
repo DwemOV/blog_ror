@@ -9,4 +9,4 @@ User.create!(email: 'admin@example.com', password: '012345678', password_confirm
 User.create!(email: 'moderator@example.com', password: '012345678', password_confirmation: '012345678', role: 1)
 User.create!(email: 'users@example.com', password: '012345678', password_confirmation: '012345678', role: 2)
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
- 50.times { FactoryGirl.create(:item) }
+ # 50.times { FactoryGirl.create(:item) }
