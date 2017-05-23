@@ -47,11 +47,11 @@ class ComentsController < ApplicationController
     @coment.user_id = current_user.id
     respond_to do |format|
       if @coment.save
-        format.js
-        format.html { redirect_to back, notice: 'coment was successfully created.' }
+        # format.js
+        format.html { redirect_to @item, notice: 'coment was successfully created.' }
         format.json { render :show, status: :created, location: @coment}
       else
-        format.js
+        # format.js
         format.html { render :new }
         format.json { render json: @coment.errors, status: :unprocessable_entity }
       end
