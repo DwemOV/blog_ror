@@ -3,7 +3,7 @@
   <div class="col-md-12 ">
     <%= form_for @item  do |f|%>
        <div><%= f.text_field :title,class: "form-control"%></div>
-        <div><%= f.cktext_area :description, class:"form-control"%></div>
+        <div><%= f.text_area :description, class:"form-control"%></div>
         <div>
           <%= f.submit 'create'%>
           <%= link_to 'Back', items_path %>
