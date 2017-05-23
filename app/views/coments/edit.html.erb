@@ -3,7 +3,7 @@
     <%= form_for @coment, url: item_coment_path(@item,@coment) do |f|%>
         <div>
           <span>Description:</span>
-          <span><%= f.cktext_area :description%></span>
+          <span><%= f.text_area :description%></span>
         </div>
         <div>
 

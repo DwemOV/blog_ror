@@ -50,7 +50,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
-   gem 'mysql2', '>= 0.3.18', '< 0.5'
+  gem 'mysql2', '>= 0.3.18', '< 0.5'
 end
 
 group :development do
